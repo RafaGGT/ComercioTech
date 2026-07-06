@@ -1,0 +1,7 @@
+#Conectarse con el servidor
+ssh comercio@127.0.0.1 -p 2222
+#Entrar a la base de datos
+mongo -u adminComercio -p --authenticationDatabase admin
+
+#Abrir tunel
+ssh -N -L 27018:127.0.0.1:27017 comercio@127.0.0.1 -p 2222
